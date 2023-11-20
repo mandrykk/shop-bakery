@@ -1,0 +1,118 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 32px;
+    }
+
+    &__logo {
+        color: $light-text-color;
+        font-family: $logo-font-family;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__logo-span {
+        color: $light-text-color;
+        font-family: $logo-font-family;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__mobile-menu {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        padding: 0;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            padding-right: 64px;
+        }
+    }
+
+    &__link {
+        color: $light-text-color;
+        font-family: $main-font-family;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            color: $primary-accent-color;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &__btn {
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 16px 32px;
+        border: 2px solid $primary-accent-color;
+        background: $primary-accent-color;
+        color: $light-text-color;
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        &:hover {
+            background: $main-bg-color;
+            color: $second-accent-color;
+            border: 2px solid $primary-accent-color; 
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        &__wrapper {
+            align-items: flex-start;
+            padding-top: 16px;
+        }
+
+        &__logo {
+            font-size: 16px;
+
+            &-span {
+                font-size: 16px;
+            }
+        }
+
+        &__mobile-menu {
+            display: block;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            margin-left: auto;
+            fill: $light-text-color;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+}

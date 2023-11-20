@@ -1,0 +1,69 @@
+$primary-text-color: #31261A;
+$primary-accent-color: #819B57;
+$light-text-color: #FAF4EA;
+$second-accent-color: #465929;
+$main-bg-color: #faf4ea;
+$second-brown-color: #A18268;
+$second-light-color: #CFCFBC;
+
+$main-font-family: 'Poppins', sans-serif;
+$logo-font-family: 'Gill Sans MT', sans-serif;
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font-family;
+    background-color: $main-bg-color;
+    color: $primary-text-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

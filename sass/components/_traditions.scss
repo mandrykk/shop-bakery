@@ -1,0 +1,69 @@
+.traditions {
+    &__content {
+        max-width: 710px;
+    }
+
+    &__title {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 84px;
+        margin-top: 0;
+        margin-bottom: 42px;
+
+        &-accent {
+            color: $primary-accent-color;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        &-sub {
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        &-text {
+            color: $primary-accent-color;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 96px 0;
+    }
+
+    &__img {
+        border-radius: 50% 50% 0 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .traditions {
+        &__wrapper {
+            padding: 40px 0;
+        }
+
+        &__title {
+            font-size: 32px;
+            font-weight: 900;
+            line-height: normal;
+            margin-bottom: 24px;
+
+            &-sub {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+}

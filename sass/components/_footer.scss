@@ -1,0 +1,192 @@
+.footer {
+    position: relative;
+    height: 240px;
+    background-color: $primary-text-color;
+    background-image: url('/images/footerbg.png');
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        width: 105px;
+        height: 90px;
+        background-image: url('/images/bread1.png');
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 310px;
+        height: 187px;
+        bottom: 0;
+        right: 0;
+        background-image: url('/images/bread3.png');
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__logo {
+        padding-top: 30px;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+
+        &-link {
+            color: $light-text-color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+
+            &:hover {
+                color: $primary-accent-color;
+            }
+        }
+    }
+
+    &__address-item {
+        color: $light-text-color;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 16px;
+    }
+
+    &__medias {
+        display: flex;
+
+        &-link {
+            margin-right: 22px;
+        }
+
+        &-icon {
+            fill: $light-text-color;
+
+            &:hover {
+                fill: $primary-accent-color;
+            }
+        }
+    }
+
+    &__rules {
+        color: $light-text-color;
+        font-size: 16px;
+        font-weight: 300;
+
+        &:hover {
+            color: $primary-accent-color;
+        }
+    }
+
+    &__data {
+        color: $second-brown-color;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        height: 100%;
+
+        &::before {
+                content: "";
+                position: absolute;
+                top: 55px;
+                width: 93px;
+                height: 197px;
+                background-image: url('/images/bread-mobile1.png');
+                background-repeat: no-repeat;
+            }
+        
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100px;
+                height: 90px;
+                bottom: 0;
+                right: 0;
+                background-image: url('/images/bread-mobile2.png');
+                background-repeat: no-repeat;
+            }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__logo {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        &__list {
+            text-align: center;
+
+            &-item {
+                margin-bottom: 18px;
+            }
+
+            &-link {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        &__address {
+            &-item {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+
+                &:not(:last-child) {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+
+        &__medias {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 8px;
+
+            &-link {
+                margin-right: 0;
+            }
+        }
+
+        &__rules {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__data {
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+    }
+}
