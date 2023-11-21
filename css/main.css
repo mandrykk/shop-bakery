@@ -225,7 +225,7 @@ textarea::placeholder {
     bottom: 0;
     width: 180px;
     height: 240px;
-    background-image: url("/images/bread-modal.png");
+    background-image: url("../images/bread-modal.png");
   }
   .mobile-menu.is-open {
     -webkit-transform: translateX(0);
@@ -902,7 +902,7 @@ textarea::placeholder {
   bottom: 0;
   width: 105px;
   height: 90px;
-  background-image: url("/images/bread1.png");
+  background-image: url("../images/bread1.png");
 }
 .footer::after {
   content: "";
@@ -911,7 +911,7 @@ textarea::placeholder {
   height: 187px;
   bottom: 0;
   right: 0;
-  background-image: url("/images/bread3.png");
+  background-image: url("../images/bread3.png");
 }
 .footer__wrapper {
   display: -webkit-box;
@@ -988,7 +988,7 @@ textarea::placeholder {
     top: 55px;
     width: 93px;
     height: 197px;
-    background-image: url("/images/bread-mobile1.png");
+    background-image: url("../images/bread-mobile1.png");
     background-repeat: no-repeat;
   }
   .footer::after {
@@ -998,7 +998,7 @@ textarea::placeholder {
     height: 90px;
     bottom: 0;
     right: 0;
-    background-image: url("/images/bread-mobile2.png");
+    background-image: url("../images/bread-mobile2.png");
     background-repeat: no-repeat;
   }
   .footer__wrapper {
@@ -1094,7 +1094,7 @@ textarea::placeholder {
   height: 780px;
   width: 780px;
   border-radius: 32px;
-  background-image: url("/images/bread-modal.png");
+  background-image: url("../images/bread-modal.png");
   background-repeat: no-repeat;
   background-position: bottom -10px right;
   background-color: #faf4ea;

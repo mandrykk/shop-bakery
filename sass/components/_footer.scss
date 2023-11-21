@@ -12,7 +12,7 @@
         bottom: 0;
         width: 105px;
         height: 90px;
-        background-image: url('/images/bread1.png');
+        background-image: url('../images/bread1.png');
     }
 
     &::after {
@@ -22,7 +22,7 @@
         height: 187px;
         bottom: 0;
         right: 0;
-        background-image: url('/images/bread3.png');
+        background-image: url('../images/bread3.png');
     }
 
     &__wrapper {
@@ -108,7 +108,7 @@
                 top: 55px;
                 width: 93px;
                 height: 197px;
-                background-image: url('/images/bread-mobile1.png');
+                background-image: url('../images/bread-mobile1.png');
                 background-repeat: no-repeat;
             }
         
@@ -119,7 +119,7 @@
                 height: 90px;
                 bottom: 0;
                 right: 0;
-                background-image: url('/images/bread-mobile2.png');
+                background-image: url('../images/bread-mobile2.png');
                 background-repeat: no-repeat;
             }
 
