@@ -4,6 +4,7 @@
     background-color: $primary-text-color;
     background-image: url('../images/footerbg.png');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 
     &::before {

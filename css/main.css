@@ -894,6 +894,7 @@ textarea::placeholder {
   background-color: #31261A;
   background-image: url("../images/footerbg.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .footer::before {

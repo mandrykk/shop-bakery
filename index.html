@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ukr">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
             </a>
             <button type="button" class="header__mobile-menu menu-btn-open">
                 <svg class="header__mobile-icon" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-menu">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
                 </svg>
             </button>
             <nav>
@@ -86,16 +86,22 @@
             <p class="modal__subtitle">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
             <form method="post" class="modal__form">
                 <div>
-                    <input type="text" name="name" class="modal__input" placeholder="Ім’я" required>
+                    <label>
+                        <input type="text" name="name" class="modal__input" placeholder="Ім’я" required>
+                    </label>
                 </div>
                 <div>
-                    <input type="text" name="firstname" class="modal__input" placeholder="Телефон" required>
+                    <label>
+                        <input type="text" name="firstname" class="modal__input" placeholder="Телефон" required>
+                    </label>
                 </div>
                 <div>
-                    <input type="email" name="email" class="modal__input" placeholder="Електронна пошта" required>
+                    <label>
+                        <input type="email" name="email" class="modal__input" placeholder="Електронна пошта" required>
+                    </label>
                 </div>
+                <button type="submit" class="modal__btn">Замовити дзвінок</button>
             </form>
-            <button type="submit" class="modal__btn">Замовити дзвінок</button>
             <p class="modal__info">Натискаючи на кнопку я погоджуюсь 
                 <a href="https://documenti.com.ua/polityka-konfidentsijnosti/" target="_blank" class="modal__info-link">
                     з політикою конфіденційності
@@ -115,6 +121,7 @@
 
         <section class="benefits">
             <div class="benefits__content">
+                <h2 style="display: none">Benefits</h2>
                 <ul class="benefits__content-list">
                     <li class="benefits__content-item">Великий попит на ринку</li>
                     <li class="benefits__content-item">Доступні за бюджетом формати</li>
@@ -260,16 +267,22 @@
                     <p class="contacts__subtitle">Заповни форму, щоб ми звʼязались з тобою!</p>
                     <form method="post">
                         <div>
-                            <input type="text" name="name" class="contacts__input" placeholder="Ім’я" required>
+                            <label>
+                                <input type="text" name="name" class="contacts__input" placeholder="Ім’я" required>
+                            </label>
                         </div>
                         <div>
-                            <input type="text" name="firstname" class="contacts__input" placeholder="Телефон" required>
+                            <label>
+                                <input type="text" name="firstname" class="contacts__input" placeholder="Телефон" required>
+                            </label>
                         </div>
                         <div>
-                            <input type="email" name="email" class="contacts__input" placeholder="Електронна пошта" required>
+                            <label>
+                                <input type="email" name="email" class="contacts__input" placeholder="Електронна пошта" required>
+                            </label>
                         </div>
+                        <button type="submit" class="contacts__btn">Замовити дзвінок</button>
                     </form>
-                    <button type="button" class="contacts__btn">Замовити дзвінок</button>
                     <p class="contacts__info">Натискаючи на кнопку я погоджуюсь <a href="https://documenti.com.ua/polityka-konfidentsijnosti/" target="_blank" class="contacts__info-link">з політикою конфіденційності</a></p>
                 </div>
                 <div>
